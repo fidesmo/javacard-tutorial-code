@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project basedir="." default="applet" name="Fidesmo JavaCard example">
+  <!-- ant-javacard -->
+  <get src="https://github.com/martinpaljak/ant-javacard/releases/download/18.09.25/ant-javacard.jar" dest="." skipexisting="true"/>
+  <taskdef name="javacard" classname="pro.javacard.ant.JavaCard" classpath="ant-javacard.jar"/>
+
+  <!-- Make applet -->
+  <target name="applet">
+    <javacard jckit="sdks/jc305u3_kit">
+      <cap targetsdk="sdks/jc303_kit" fidesmoappid="465f350c">
+        <applet class="com.fidesmo.javacard.example.HelloWorld"/>
+
+      </cap>
+    </javacard>
+  </target>
+</project>
