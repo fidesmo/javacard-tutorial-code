@@ -7,7 +7,7 @@
   <!-- Make applet -->
   <target name="applet">
     <javacard jckit="sdks/jc305u3_kit">
-      <cap targetsdk="sdks/jc303_kit" fidesmoappid="465f350c">
+      <cap targetsdk="sdks/jc303_kit" fidesmoappid="XXXXXXXX">
         <applet class="com.fidesmo.javacard.example.HelloWorld"/>
 
       </cap>
